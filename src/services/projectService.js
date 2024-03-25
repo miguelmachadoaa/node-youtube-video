@@ -7,8 +7,6 @@ const getAllProjects = async ()=>{
     await mongodb.getAllProjects();
 
     const allProjects = await mongodb.getAllProjects();
-    //const allProjects = await queries.getAllProjects();
-    //const allProjects = await firebase.getAllProjects();
     return allProjects;
 }
 
@@ -20,7 +18,6 @@ const getProjectById = async (id)=>{
 const createProject = async (name, body)=>{
 
     const project = await mongodb.createProject(name, body);
-    //const project = await queries.createProject(name, body);
     return project;
 }
 
